@@ -1,0 +1,63 @@
+.fixedLayer{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+  z-index: 20;
+}
+.confirm_content{
+  width: 100%;
+  background-color: #fff;
+  -webkit-border-radius: .25rem;
+  border-radius: .5rem;
+  text-align: center;
+}
+.center_layer{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 9999;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  max-width: 90%;
+  min-width: 82%;
+}
+.active{
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.confirm_title{
+  font-weight: 600;
+  padding-top: 1.4375rem;
+  font-size: 0.8534rem;
+}
+.confirm_msg{
+  padding: .9375rem 1.5rem;
+  color: #b9b9b9;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+.spanText{
+  display: block;
+  text-align: justify;
+  line-height: 1rem;
+}
+.confirm_button{
+  padding: 0 1.5rem 1.5rem;
+}
+.confirm_button_confirm{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: .8rem;
+  color: #24ba8a;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #24ba8a;
+  border-radius: .15rem;
+}

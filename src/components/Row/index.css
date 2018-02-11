@@ -1,0 +1,116 @@
+.li{
+  height: 3.5rem;
+  line-height: 3.5rem;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+  font-size: 1rem;
+  color: #394043;
+  overflow: hidden;
+}
+
+.li>div{
+  display:inline-block
+}
+
+.li>i,.li>a{
+  line-height: inherit;
+  position: absolute;
+  right: 1.25rem;
+  max-width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #9c9fa1;
+}
+.li>a{
+  right: 0;
+}
+.li>a>i{
+  margin-right: 1.25rem;
+}
+
+.li>span,.li>a>span{
+  background: url($public_url/static/resource/yezhu/right.png) no-repeat left top;
+  width: .5rem;
+  height: .875rem;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: cover;
+}
+
+.li>.date{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  opacity: 0;
+  display: block;
+}
+
+.rentInput{
+  position: absolute;
+  padding: 0;
+  top:1px;
+  bottom: 1px;
+  right: 0;
+  border: 0;
+  width: 60%;
+  font-size: 1rem;
+  text-align: right;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.is_check{
+  display: inline-block;
+  width: 3.1875rem;
+  height: 2.125rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0 !important;
+  margin: auto;
+  background: url($public_url/static/resource/common/off.png) center no-repeat;
+  background-size: contain;
+}
+
+.check_on{
+  background: url($public_url/static/resource/common/on.png) center no-repeat;
+  background-size: contain;
+}
+
+.withouttitle{
+  left: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.fwBold{
+  font-weight: bold;
+}
+
+.bdnone{
+  border-bottom: 0;
+}
+
+.infoLi{
+  height:2.5rem;
+  line-height:2.5rem;
+}
+
+.infoTitle{
+  color: #999999;
+  font-size: 0.925rem;
+}
+
+.infoContent{
+  text-align: left;
+  width: 68%;
+}

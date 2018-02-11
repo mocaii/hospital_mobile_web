@@ -1,0 +1,25 @@
+.stepContainer{
+  display: inline-block;
+}
+.imgDiv{
+  position: relative;
+  height: 2.5rem;
+}
+.imgDiv img{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imgDiv span{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.stepText{
+  color: #2AB68F;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}

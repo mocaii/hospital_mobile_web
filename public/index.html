@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-title" content="医院点餐平台">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="applicable-device" content="mobile">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="description" content="手机点餐，方便快捷">
+    <meta name="keywords" content="手机点餐，方便快捷">
+    <meta http-equiv="Cache-Control" content="no-transform ">
+    <script type="text/javascript" src="%PUBLIC_URL%/static/common/js/zepto.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=vs7UCU7d6hCllvY1VfB8etudn5uk8ep9"></script>
+
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';//其中“20”根据你设置的html的font-size属性值做适当的变化
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <script>
+        var g_conf = {};
+    </script>
+    <link rel="stylesheet" href="%PUBLIC_URL%/static/common/css/common_anju.css?_v=20171201022105f57">
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      $(function () {
+          $(document).on('ajaxError', function(e, xhr, options){
+              if(xhr.status===401){
+                  var href = window.location.href;
+                  window.location.href= ''+href;
+              }
+          });
+      })
+    </script>
+  </body>
+</html>

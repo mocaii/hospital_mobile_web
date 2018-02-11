@@ -1,0 +1,30 @@
+.title{
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: #666666;
+}
+.rel{
+  position: relative;
+}
+.abs{
+  position: absolute;
+}
+.left{
+  top: 50%;
+  left: 0.5rem;
+  position: absolute;
+  transform: translate(0, -50%);
+}
+.center{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.right{
+  top: 50%;
+  right: 0.5rem;
+  position: absolute;
+  transform: translate(0, -50%);
+}
