@@ -1,0 +1,128 @@
+.list{
+  width: 3.5rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow-y: scroll;
+}
+.list li{
+  padding: .5rem;
+  line-height: .875rem;
+  text-align: center;
+  border-bottom: 1px solid #f8f8f8;
+  color: #272729;
+  font-size: .6rem;
+  opacity: .5;
+  background-color: rgb(245, 245, 245);
+}
+.list li:last-child{
+  margin-bottom: 2.5rem;
+}
+.list li:hover{
+  background-color: #fff;
+  opacity: 1;
+  font-weight: 600;
+}
+.content{
+  padding-left: 4rem;
+}
+.content .title{
+  height: 2rem;
+  line-height: 2rem;
+  font-size: .6rem;
+  font-weight: 600;
+}
+.content_item{
+  position: relative;
+  padding: .25rem 0;
+}
+.content_item .item_img{
+  height: 3rem;
+  width: 3rem;
+  float: left;
+}
+.content_item .item_right{
+  padding-left: 3.5rem;
+}
+.item_right .item_title{
+  font-size: .746rem;
+  font-weight: 600;
+}
+.item_right .sub_title{
+  margin-top: .25rem;
+  font-size: .5rem;
+  color: #969696;
+}
+.item_right .item_price{
+  color: #2AB68F;
+  font-weight: 700;
+  margin-top: .5rem;
+}
+.operate{
+  position: absolute;
+  right:  1rem;
+  bottom:  0;
+  display: flex;
+  align-items: center;
+}
+.operate img{
+  height: 1rem;
+  width: 1rem;
+  margin: 0 .25rem;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  height: 0;
+  clear: both;
+}
+.bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background-color: #707070;
+  display: flex;
+  align-items: center;
+}
+.bottom .cart{
+  display: inline-block;
+  margin-top: .35rem;
+  width: 2rem;
+  text-align: center;
+  margin-left: .5rem;
+  position: relative;
+}
+.bottom .cart img{
+  height: 1.75rem;
+  width: 1.75rem;
+}
+.bottom .cart i{
+  position: absolute;
+  display: block;
+  background-color: #2AB68F;
+  width: .75rem;
+  height: .75rem;
+  line-height: .75rem;
+  border-radius: 1rem;
+  right: -.025rem;
+  top: .025rem;
+  font-size: .6rem;
+  color: #fff;
+}
+.bottom .total_price{
+  color: #fff;
+  margin-left: 1rem;
+}
+.bottom .btn{
+  position: absolute;
+  height: 2.5rem;
+  width: 5rem;
+  background-color: #2AB68F;
+  color: #fff;
+  right: 0;
+  line-height: 2.5rem;
+  text-align: center;
+}
