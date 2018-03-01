@@ -5,6 +5,7 @@ class OrderInfo extends Component{
     constructor(props){
         super(props);
         $("body").css("backgroundColor","#f5f5f5");
+        document.title = "确认订单"
     }
 
     componentWillUnmount(){
@@ -48,6 +49,12 @@ class OrderInfo extends Component{
                 <div className={style.order_info}>
                     <p className={style.order_info_title}>订单明细</p>
                     <p className={style.order_item}><span>皮蛋瘦肉粥</span><span>*1</span><span>￥10</span></p>
+                    <p className={style.order_item}><span>皮蛋瘦肉粥</span><span>*1</span><span>￥10</span></p>
+                    <p className={style.sub_total_price}>小计<span>￥20</span></p>
+                </div>
+
+                <div className={style.bottom}>
+                    <p className={style.btn}>提交订单</p>
                 </div>
             </div>
         )
