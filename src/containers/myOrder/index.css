@@ -1,0 +1,38 @@
+.wrapper{
+  padding: 1.5rem 1rem;
+}
+.order_item{
+  border-bottom: 1px solid #eee;
+  padding: .5rem 0;
+}
+.item_title{
+  font-size: .64rem;
+  display: flex;
+  justify-content: space-between;
+  padding: .25rem 0;
+}
+.item_title .name{
+  font-weight: 700;
+}
+.item_price_num{
+  padding:  .25rem 0;
+  font-size: .64rem;
+}
+.item_price_num .price{
+  font-weight: 700;
+  padding-right: 1rem;
+}
+.item_bottom{
+  font-size: .64rem;
+}
+.item_bottom .btn{
+  margin-top: .5rem;
+  display: inline-block;
+  height: 1rem;
+  line-height: 1rem;
+  width: 3.25rem;
+  color: #2AB68F;
+  text-align: center;
+  border: 1px solid #2AB68F;
+  border-radius: .125rem;
+}
