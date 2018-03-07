@@ -1,11 +1,34 @@
 import React, { Component } from 'react'
 import style from './index.css'
-
+import { dispatch_func } from '../../modules/home'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 
 class Home extends Component{
+    constructor(props){
+        super(props);
+        
+        this
+
+
+    }
 
     componentDidMount(){
         document.title = "点餐"
+    }
+
+    handleAjax(url, options, successHandle, requestType){
+        requestType = requestType || "get";
+        $.ajax({
+            type:requestType,
+            url: url,
+            dataType:'json',
+            data:options,
+            cache: false,
+            error: (result)=>{
+                successHandle(result);
+            }
+        });
     }
 
     render(){
@@ -77,4 +100,13 @@ class Home extends Component{
         )
     }
 }
-export default Home
+
+const mapStateToProps = state => (state.home);
+
+const mapDispatchToProps = dispatch => bindActionCreators(dispatch_func, dispatch);
+
+export default connect(
+    mapDispatchToProps,
+    mapStateToProps
+)(Home)
+

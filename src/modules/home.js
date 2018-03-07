@@ -1,5 +1,5 @@
 //actions: 加多一个前缀主要是为了避免action与其它页面的action冲突
-const INIT_NAV_DATA = 'home/INIT_NAV_DATA';
+const INIT_NAV_LIST = 'home/INIT_NAV_LIST';
 export const INIT_NEWS_DATA = 'home/INIT_NEWS_DATA';
 export const INIT_HOUSE_DATA = 'home/INIT_HOUSE_DATA';
 export const INIT_AD_DATA = 'home/INIT_AD_DATA';
@@ -7,7 +7,7 @@ export const INIT_AD_DATA = 'home/INIT_AD_DATA';
 
 //reducers
 const initialState = {
-    navData: [],
+    navList: [],
     newsData: [],
     houseData: [],
     ad: [],
@@ -15,10 +15,10 @@ const initialState = {
 
 export default (state = initialState, action) => {
     switch (action.type) {
-        case INIT_NAV_DATA:
+        case INIT_NAV_LIST:
             return {
                 ...state,
-                navData: action.data
+                navList: action.data
             };
 
         case INIT_NEWS_DATA:
@@ -44,10 +44,10 @@ export default (state = initialState, action) => {
 
 
 export const dispatch_func = {
-    getNavData: (data) => {
+    getNavList: (data) => {
         return dispatch => {
             dispatch({
-                type: INIT_NAV_DATA,
+                type: INIT_NAV_LIST,
                 data: data
             });
         }

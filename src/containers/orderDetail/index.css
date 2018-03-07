@@ -1,0 +1,60 @@
+.order_info{
+  background-color: #fff;
+  //margin-top: .5rem;
+}
+.order_info_title{
+  padding: .5rem 0;
+  text-align: center;
+  font-weight: 700;
+}
+.order_item{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+  padding: .75rem 0;
+  font-size: .746rem;
+  border-bottom: 1px solid #eee;
+}
+.sub_total_price{
+  text-align: right;
+  padding: .75rem 1rem;
+  font-size: .746rem;
+  font-weight: 600;
+}
+.sub_total_price span{
+  color: #2AB68F;
+}
+.other_info{
+  margin-top: .5rem;
+}
+.other_info .order_item{
+  display: block;
+}
+.other_info .order_item span:first-child{
+  display: inline-block;
+  width: 5rem;
+}
+.other_info .order_item:last-child{
+  border: none;
+}
+.bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background-color: #707070;
+  display: flex;
+  align-items: center;
+}
+.bottom .btn{
+  position: absolute;
+  height: 2.5rem;
+  width: 5rem;
+  background-color: #2AB68F;
+  color: #fff;
+  right: 0;
+  line-height: 2.5rem;
+  text-align: center;
+}
